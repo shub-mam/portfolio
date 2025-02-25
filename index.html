@@ -42,6 +42,17 @@
             border: 4px solid black;
             box-shadow: 5px 5px 0px black;
         }
+        .description {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #f4f4f4;
+            border: 2px solid black;
+            box-shadow: 5px 5px 0px black;
+        }
         .video-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -50,20 +61,18 @@
         }
         .video-container {
             position: relative;
-            width: 100%; /* Adjust width as needed */
-            max-width: 360px; /* Scales for mobile */
-            height: 640px; /* 9:16 aspect ratio */
+            padding-bottom: 177.78%; /* Aspect ratio for 1080x1920 */
+            height: 0;
             overflow: hidden;
             border: 4px solid black;
             box-shadow: 5px 5px 0px black;
         }
         .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-}
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         .contact {
             margin-top: 20px;
@@ -87,19 +96,19 @@
     <div class="container">
         <h1>Shortform Video Editor Portfolio</h1>
         <div class="image-container">
-            <img src="images/nerdy-boy.jpg" alt="Nerdy boy" class="profile-img">
+            <img src="nerdy-boy.jpg" alt="Nerdy boy" class="profile-img">
         </div>
-        <p>Hi, I'm a shortform video editor specializing in engaging, fast-paced content. Check out some of my work below!</p>
+        <p class="description">I create engaging, fast-paced short-form videos designed to capture attention and boost engagement. Check out some of my work below!</p>
         
         <div class="video-gallery">
             <div class="video-container">
-                <iframe src="https://drive.google.com/file/d/1t2Ks1TYI9bYIpI09eWfScSzeQUCMgmCB/preview" allowfullscreen></iframe>
+                <iframe src="https://drive.google.com/file/d/VIDEO_LINK_1/preview" allowfullscreen></iframe>
             </div>
             <div class="video-container">
-                <iframe src="https://drive.google.com/file/d/1t2Ks1TYI9bYIpI09eWfScSzeQUCMgmCB/view?usp=drive_link"  allowfullscreen></iframe>
+                <iframe src="https://drive.google.com/file/d/VIDEO_LINK_2/preview" allowfullscreen></iframe>
             </div>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://drive.google.com/file/d/VIDEO_LINK_3/preview" allowfullscreen></iframe>
             </div>
         </div>
         
