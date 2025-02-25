@@ -30,13 +30,17 @@
             padding: 10px;
             display: inline-block;
         }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 10px;
             border: 4px solid black;
             box-shadow: 5px 5px 0px black;
-            margin: 20px auto;
         }
         .video-gallery {
             display: grid;
@@ -80,8 +84,9 @@
 <body>
     <div class="container">
         <h1>Shortform Video Editor Portfolio</h1>
-<br>
-        <img src="nerdy-boy.jpg" alt="Nerdy boy" class="profile-img">
+        <div class="image-container">
+            <img src="nerdy-boy.jpg" alt="Nerdy boy" class="profile-img">
+        </div>
         <p>Hi, I'm a shortform video editor specializing in engaging, fast-paced content. Check out some of my work below!</p>
         
         <div class="video-gallery">
