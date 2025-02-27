@@ -60,18 +60,20 @@
             white-space: normal;
         }
          .video-gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Ensures two videos per row */
-            column-gap: 2px; row-gap: 10px;
-            padding: 20px 0;
-           justify-content: space-evenly;
-        }
-        .video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two videos per row */
+    column-gap: 2px;
+    row-gap: 10px;
+    padding: 20px 0;
+    place-items: center; /* Ensures grid items align in the center */
+}
+
+.video-container {
     width: 100%;
     max-width: 360px;
-    margin: 0; /* Removes unwanted extra space */
+    margin: auto; /* Centers the video inside its grid cell */
     position: relative;
-    aspect-ratio: 9 / 16;
+    aspect-ratio: 9 / 16; /* Ensures proper aspect ratio */
     overflow: hidden;
     border: 4px solid black;
     box-shadow: 5px 5px 0px black;
