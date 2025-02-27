@@ -59,14 +59,22 @@
             overflow-wrap: break-word;
             white-space: normal;
         }
-         .video-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two videos per row */
-    column-gap: 2px;
-    row-gap: 10px;
-    padding: 20px 0;
-    place-items: center; /* Ensures grid items align in the center */
-}
+                .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns on desktop */
+            column-gap: 10px;
+            row-gap: 10px;
+            padding: 20px 0;
+            place-items: center;
+        }
+        
+        /* Responsive: One column on mobile */
+        @media (max-width: 768px) {
+            .video-gallery {
+                grid-template-columns: 1fr; /* Switch to one column on mobile */
+            }
+        }
+
 
 .video-container {
     width: 100%;
