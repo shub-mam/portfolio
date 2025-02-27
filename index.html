@@ -96,13 +96,26 @@
             font-weight: bold;
             border-bottom: 2px solid black;
     
+a {
+    text-decoration: none; /* Removes default underline */
+    border-bottom: none; /* Ensures no extra underline */
+}
+
+a:hover {
+    background: yellow; /* Keeps hover effect */
+    text-decoration: none; /* Ensures no underline on hover */
+}
     display: inline-block; /* Allows breaking within the container */
     max-width: 100%; /* Ensures the email does not overflow */
     overflow-wrap: break-word; /* Enables breaking of long words */
 
         }
         a:hover {
-            background: yellow;
+            
+            
+    background: yellow; /* Keeps hover effect */
+    text-decoration: none; /* Ensures no underline on hover */
+}
         }
     </style>
 </head>
