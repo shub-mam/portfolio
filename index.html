@@ -67,17 +67,17 @@
         }
   .video-container {
     width: 100%;
-    max-width: 360px; /* Adjust width to maintain a vertical format */
+    max-width: 360px; /* Adjust width for a vertical format */
     margin: auto;
     position: relative;
-    padding-bottom: 177.78%; /* Aspect ratio for 1080x1920 */
-    height: 0;
+    aspect-ratio: 9 / 16; /* Maintains 1080x1920 aspect ratio */
     overflow: hidden;
     border: 4px solid black;
     box-shadow: 5px 5px 0px black;
-    background: black; /* Ensure background blends with video */
+    background: black; /* Ensures background blends */
 }
-      .video-container iframe {
+
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
